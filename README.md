@@ -250,8 +250,8 @@ This message shows that your installation appears to be working correctly.
 ### Clone this repository and move to example folder
 
 ```
-git clone https://github.com/iam-veeramalla/Docker-Zero-to-Hero
-cd  examples
+git clone reponame
+cd  reponame
 ```
 
 ### Login to Docker [Create an account with https://hub.docker.com/]
@@ -262,7 +262,7 @@ docker login
 
 ```
 Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
-Username: abhishekf5
+Username: 
 Password:
 WARNING! Your password will be stored unencrypted in /home/ubuntu/.docker/config.json.
 Configure a credential helper to remove this warning. See
@@ -276,7 +276,7 @@ Login Succeeded
 You need to change the username accoringly in the below command
 
 ```
-docker build -t abhishekf5/my-first-docker-image:latest .
+docker build -t my-first-docker-image:latest .
 ```
 
 Output of the above command
@@ -319,7 +319,7 @@ Output
 
 ```
 REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
-abhishekf5/my-first-docker-image   latest    960d37536dcd   26 seconds ago   467MB
+my-first-docker-image   latest    960d37536dcd   26 seconds ago   467MB
 ubuntu                             latest    58db3edaf2be   13 days ago      77.8MB
 hello-world                        latest    feb5d9fea6a5   16 months ago    13.3kB
 ```
@@ -327,7 +327,7 @@ hello-world                        latest    feb5d9fea6a5   16 months ago    13.
 ### Run your First Docker Container
 
 ```
-docker run -it abhishekf5/my-first-docker-image
+docker run -it my-first-docker-image
 ```
 
 Output
@@ -339,7 +339,7 @@ Hello World
 ### Push the Image to DockerHub and share it with the world
 
 ```
-docker push abhishekf5/my-first-docker-image
+docker push my-first-docker-image
 ```
 
 Output
@@ -354,4 +354,4 @@ c5ff2d88f679: Mounted from library/ubuntu
 latest: digest: sha256:6e49841ad9e720a7baedcd41f9b666fcd7b583151d0763fe78101bb8221b1d88 size: 1157
 ```
 
-### You must be feeling like a champ already 
+
